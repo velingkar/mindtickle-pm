@@ -25,6 +25,7 @@ Follow these rules in every section. See `references/style-guide.md` for example
 - **Active voice.** "Users can't track progress" not "Progress cannot be tracked by users."
 - **Short sentences.** One idea per sentence. Break anything over 20 words.
 - **Bullets over prose** for lists, evidence, and scope items.
+- **Short paragraphs, not dense blocks.** For narrative sections (Problem, Why Now, Solution, Target Users), break content into multiple short paragraphs of 1–2 sentences each. Never lump 4+ sentences into a single paragraph block.
 - **No filler.** Cut "leverage", "seamless", "best-in-class", "holistic". Say what you mean.
 - **Honest gaps.** If something isn't known, write `[TBD — needs: X]`. Don't invent.
 - **Numbers beat adjectives.** "43% of tickets" beats "many support tickets."

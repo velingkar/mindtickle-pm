@@ -5,34 +5,44 @@
 ---
 
 ## 1. Problem Statement
-*3–5 sentences. Active voice. One real signal minimum.*
+*3–5 sentences total. Active voice. One real signal minimum. Break into 2–3 short paragraphs — don't run all sentences together.*
 
-Who is affected. What breaks for them. What happens if it stays unsolved.
-Cite at least one real signal: support tickets, churn data, NPS verbatim, sales objection, interview quote.
+Who is affected and what breaks for them.
+
+What happens if it stays unsolved. Cite at least one real signal: support tickets, churn data, NPS verbatim, sales objection, interview quote.
 
 **Example:**
-> Sales reps can't find the right content during live calls. They improvise — or send the wrong asset. 17 CS tickets flagged this in Q4. Two enterprise renewals cited it as a blocker.
+> Sales reps can't find the right content during live calls. They improvise — or send the wrong asset.
+>
+> 17 CS tickets flagged this in Q4. Two enterprise renewals cited it as a blocker.
 
 ---
 
 ## 2. Why Now
-*2–4 sentences. State what changed — not just what matters.*
+*2–4 sentences total. State what changed — not just what matters. Use 1–2 short paragraphs.*
 
 Name the specific trigger: a competitor move, a customer pressure point, a platform capability that just landed, or a strategic shift.
+
 If there's no strong "why now," say so and flag it as a risk in section 7.
 
 **Example:**
-> Gong now surfaces content recommendations mid-call. Three prospects mentioned it last quarter. We have the signals data to build this — we just haven't connected it to search yet.
+> Gong now surfaces content recommendations mid-call. Three prospects mentioned it last quarter.
+>
+> We have the signals data to build this — we just haven't connected it to search yet.
 
 ---
 
 ## 3. Proposed Solution
-*4–6 sentences. User's perspective. No architecture, no jargon.*
+*4–6 sentences total. User's perspective. No architecture, no jargon. Break into 2–3 short paragraphs.*
 
-Tell the story of what changes for the user. What do they do differently? What's faster, clearer, or less frustrating? Why is this meaningfully better than today?
+Tell the story of what changes for the user. What do they do differently?
+
+What's faster, clearer, or less frustrating? Why is this meaningfully better than today?
 
 **Example:**
-> When a rep opens a deal room, the top 3 recommended assets appear automatically — ranked by what's worked in similar deals. No search. No guessing. The rep confirms or swaps and moves on.
+> When a rep opens a deal room, the top 3 recommended assets appear automatically — ranked by what's worked in similar deals.
+>
+> No search. No guessing. The rep confirms or swaps and moves on.
 
 ---
 
@@ -53,12 +63,16 @@ Tell the story of what changes for the user. What do they do differently? What's
 ---
 
 ## 5. Target Users
-*3–4 sentences. One primary segment. Specific enough to sketch their workflow.*
+*3–4 sentences total. One primary segment. Specific enough to sketch their workflow. Use 2 short paragraphs.*
 
-Name the role, company type, and workflow context. Explain why this problem is uniquely painful for them. Name secondary users briefly if relevant — don't conflate them with the primary.
+Name the role, company type, and workflow context. Explain why this problem is uniquely painful for them.
+
+Name secondary users briefly if relevant — don't conflate them with the primary.
 
 **Example:**
-> Primary: Account Executives at mid-market SaaS companies (100–500 seats). They run 5–8 demos a week with limited prep time. Content overload is their biggest complaint. Secondary: Sales managers who review call recordings and want to see what content was used.
+> Primary: Account Executives at mid-market SaaS companies (100–500 seats). They run 5–8 demos a week with limited prep time. Content overload is their biggest complaint.
+>
+> Secondary: Sales managers who review call recordings and want to see what content was used.
 
 ---
 

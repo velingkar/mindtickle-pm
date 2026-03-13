@@ -35,10 +35,19 @@ Use bullets for:
 - Lists of goals, non-goals, risks
 - Milestone details
 
-Use prose for:
-- Problem narrative (2–3 sentences max)
-- Solution story (3–4 sentences max)
-- Why now (2–3 sentences max)
+Use prose for narrative sections — but break it into short paragraphs, not a single dense block:
+- Problem narrative: 2–3 paragraphs, 1–2 sentences each
+- Solution story: 2–3 paragraphs, 1–2 sentences each
+- Why now: 1–2 paragraphs, 1–2 sentences each
+- Target Users: 2 paragraphs (primary / secondary)
+
+❌ Dense block:
+> Sales reps can't find content during calls. They improvise or send the wrong asset. 17 CS tickets flagged this in Q4. Two enterprise renewals cited it as a blocker.
+
+✅ Short paragraphs:
+> Sales reps can't find content during calls. They improvise — or send the wrong asset.
+>
+> 17 CS tickets flagged this in Q4. Two enterprise renewals cited it as a blocker.
 
 ---
 
