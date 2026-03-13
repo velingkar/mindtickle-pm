@@ -1,7 +1,7 @@
 {
   "name": "mindtickle-pm",
-  "version": "0.3.0",
-  "description": "PM toolkit for MindTickle — create and review product one-pagers, build clickable lo-fi prototypes, and generate user stories.",
+  "version": "0.4.0",
+  "description": "PM toolkit for MindTickle Product Team— create and review product one-pagers, build clickable lo-fi prototypes, and generate user stories.",
   "author": {
     "name": "MindTickle PM Team"
   },
