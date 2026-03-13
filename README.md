@@ -1,4 +1,4 @@
-# mindtickle-pm
+# mindtickle-pm `v0.3.0`
 
 A Cowork plugin for Product Managers at MindTickle. Provides five skills covering one-pager creation and review, lo-fi prototyping, and user story writing — all wired to internal knowledge sources via built-in connector support.
 
