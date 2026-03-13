@@ -1,0 +1,9 @@
+{
+  "name": "mindtickle-pm",
+  "version": "0.2.0",
+  "description": "PM toolkit for MindTickle — create and review product one-pagers, and build clickable lo-fi prototypes.",
+  "author": {
+    "name": "MindTickle PM Team"
+  },
+  "keywords": ["product management", "one-pager", "PRD", "feature brief", "prototype", "wireframe", "mindtickle"]
+}
