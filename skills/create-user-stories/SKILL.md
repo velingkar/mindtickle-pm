@@ -9,7 +9,7 @@ description: >
   Asks which milestone to scope to, lists stories for confirmation, then fleshes out each story
   interactively before optionally exporting to Jira.
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # Create User Stories
@@ -96,21 +96,48 @@ Then ask:
 
 ## Phase 4 — Write and refine each story
 
-Work through stories **one at a time**. For each story:
+Work through stories **one at a time**. For each story, follow steps A → E in order. **Never advance to the next story without an explicit "next" signal from the user.**
+
+---
 
 **Step A — Draft the story**
-Follow the template in `references/story-template.md`. Apply INVEST criteria (see reference). Use real product language from the domain model.
+
+Follow the template in `references/story-template.md`. Apply INVEST criteria. Use real product language from the domain model.
+
+---
 
 **Step B — Self-check before showing**
+
+Run this checklist internally before presenting anything:
 - Is the "so that" benefit genuinely valuable — or just restating the action?
 - Are acceptance criteria testable? Can a QA engineer write a test case from each one?
 - Is the story small enough for one sprint? If it implies 3+ separate flows, flag it for splitting.
 - Does it avoid implementation detail? ("the system stores X" not "the API POSTs to /endpoint")
 - Does it handle the key edge cases mentioned in the inputs?
 
-**Step C — Show the story and ask for refinement**
+---
 
-Present the story in a clearly labelled block:
+**Step C — Identify open questions and missing information**
+
+Before showing the story, generate two internal lists:
+
+**Open questions** — things you weren't sure about while writing, where the inputs were ambiguous or silent. Examples:
+- "The one-pager mentions 'managers' — is this the direct manager only, or any user with a manager role?"
+- "Is this action available on mobile, or desktop only?"
+- "The flow skips what happens after submission — does the user get a confirmation?"
+
+**Missing information** — fields or details that are TBD and will need to be resolved before the story can be built. Examples:
+- Design reference not provided
+- A specific validation rule isn't defined
+- An edge case (e.g., empty state, 0 results, API error) isn't covered in the inputs
+
+If both lists are empty, skip to Step D.
+
+---
+
+**Step D — Show the story**
+
+Present the story in this format:
 
 ```
 ─────────────────────────────────────
@@ -119,7 +146,7 @@ Story [N of M]: [Title]
 Description:
 As a [role], I want to [action], so that [benefit].
 
-Design reference: [Link or "TBD — attach Figma/Drive link"]
+Design reference: [Link or "TBD — needs Figma/Drive link"]
 
 Acceptance Criteria:
 1. [Criterion]
@@ -128,18 +155,37 @@ Acceptance Criteria:
 4. [Criterion]
 5. [Edge case or error state]
 6. [Accessibility or performance consideration, if applicable]
+
+❓ Open questions:
+- [Question 1 — what you need to know to make the story more precise]
+- [Question 2]
+(Omit this section if there are no open questions)
+
+⚠️  Missing information:
+- [What's TBD and who should fill it in]
+- [e.g., "Design reference needed — ask designer to attach Figma before sprint starts"]
+(Omit this section if nothing is missing)
 ─────────────────────────────────────
 ```
 
-Then ask: "Does this look right? Anything to add, change, or clarify before I move to the next story?"
+---
 
-Wait for feedback. Apply changes. Re-check the revised version. Then move to the next story.
+**Step E — Pause and wait for user input**
 
-**Interaction patterns during refinement:**
-- If the user says "add an edge case for X" — add a criterion and re-show just the criteria block
-- If the user says "split this into two stories" — draft both and confirm before continuing
-- If the user asks "what does X mean" — answer inline, update the story if needed, don't re-show the full story unless it changed
-- If the user says "looks good" or "next" — move on immediately
+After presenting the story, always end with this exact prompt:
+
+> **"Reply with any changes, answer the questions above, or type `next` to move to Story [N+1]."**
+
+**Do not proceed to the next story until the user replies.** Treat silence as a pause, not approval.
+
+**Handling replies:**
+- If the user answers a question — update the story, note what changed, re-show only the affected section, then prompt again
+- If the user requests a change — apply it, re-show the updated story, then prompt again
+- If the user says "split this" — draft both stories and confirm before continuing
+- If the user says "looks good", "done", "next", or "✓" — move to the next story immediately
+- If the user asks a clarifying question — answer it inline; only re-show the story if it changed
+
+---
 
 ---
 
