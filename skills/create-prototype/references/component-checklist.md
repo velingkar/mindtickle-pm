@@ -39,4 +39,5 @@ Run this checklist before submitting any prototype. Every item must pass.
 - [ ] Single file, default export, no required props
 - [ ] All state in `useState` / `useReducer` — no `localStorage`
 - [ ] `screen` state variable controls navigation
-- [ ] No external libraries beyond those available in the Cowork React sandbox (recharts, lucide-react, lodash, d3, Tailwind core utilities)
+- [ ] No external icon libraries — **never import lucide-react** (not supported in the Cowork sandbox). Use inline SVGs for all icons instead.
+- [ ] No external libraries beyond those available in the Cowork React sandbox (recharts, lodash, d3, Tailwind core utilities)

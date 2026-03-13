@@ -122,6 +122,7 @@ Generate a single self-contained React artifact using the design system from `re
 - Modals rendered as `position: fixed` divs with backdrop
 - All interactive elements must be clickable and lead somewhere — no dead ends
 - Form fields are controlled inputs (editable)
+- **Never import `lucide-react` or any icon library** — the Cowork sandbox does not support them. Render all icons as inline `<svg>` elements.
 
 Run the component checklist from `references/component-checklist.md` before submitting. Every item must pass.
 
