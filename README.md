@@ -1,4 +1,4 @@
-# mindtickle-pm `v0.4.0`
+# mindtickle-pm `v0.5.0`
 
 A Cowork plugin for Product Managers at MindTickle. Provides five skills covering one-pager creation and review, lo-fi prototyping, and user story writing — all wired to internal knowledge sources via built-in connector support.
 
@@ -37,7 +37,7 @@ Reviews an existing one-pager, provides section-by-section critique, and produce
 ---
 
 ### `create-prototype`
-Builds a clickable lo-fidelity HTML/React prototype from documents, flow descriptions, screenshots, or rough sketches. Asks clarifying questions before building, confirms a flow map before writing code, and produces a single self-contained React artifact in a consistent hand-drawn sketch aesthetic.
+Builds a clickable lo-fidelity HTML/React prototype from documents, flow descriptions, screenshots, or rough sketches. Applies a Jobs To Be Done (JTBD) lens throughout — surfaces the job story before designing, validates the flow map against it, and delivers a JTBD summary at handoff. Asks clarifying questions before building, confirms a flow map (with job steps per screen) before writing code, and produces a single self-contained React artifact in a consistent hand-drawn sketch aesthetic.
 
 **Trigger phrases:**
 - "Build a prototype for X"
@@ -54,7 +54,7 @@ Builds a clickable lo-fidelity HTML/React prototype from documents, flow descrip
 ---
 
 ### `edit-prototype`
-Modifies an existing lo-fi prototype while maintaining design system consistency. Classifies changes as cosmetic, structural, behavioural, or content-related, and flags downstream effects before editing.
+Modifies an existing lo-fi prototype while maintaining design system consistency. Applies a Jobs To Be Done (JTBD) lens to every change — identifies the job driving the edit, validates that the change moves the user closer to their goal, and flags edits that add friction without payoff. Classifies changes as cosmetic, structural, behavioural, or content-related, and flags downstream effects before editing.
 
 **Trigger phrases:**
 - "Edit / update the prototype"

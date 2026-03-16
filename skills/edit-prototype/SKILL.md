@@ -9,7 +9,7 @@ description: >
   Accepts the existing code plus a plain-language description of changes. Clarifies impact before editing.
   Summarises what changed after every edit.
 metadata:
-  version: "0.3.0"
+  version: "0.4.0"
 ---
 
 # Edit a Lo-Fi Prototype
@@ -86,7 +86,17 @@ If the request spans multiple types, handle them in order: structural → behavi
 
 Only proceed after the user confirms.
 
-**Structural changes:** output the updated flow map in the same format used by `create-prototype` (SCREEN → Actions → leads to) and ask:
+**Structural changes:** output the updated flow map in the format below and ask:
+
+```
+SCREEN 1: [Name]
+  Job step: [Which step in the user's job this screen serves]
+  Trigger: [What causes this screen to appear]
+  Components: [List of UI elements — nav, table, button, modal, etc.]
+  Actions:
+    → [Action label] leads to SCREEN 2
+    → [Action label] opens MODAL A
+```
 
 > "Here's how the updated flow would look. Does this match your intent before I edit the code?"
 
